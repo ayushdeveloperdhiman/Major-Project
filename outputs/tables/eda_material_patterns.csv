@@ -1,0 +1,6 @@
+id,type,pattern,evidence
+P1,signal,Negative feedback is strongly tied to lower repeat purchase,"repeat rate Negative 28.2% vs Neutral 50.6% vs Positive 72.0% (chi2=329, p=2.9e-72, Cramer's V=0.37)"
+P2,signal,Negative cases take about twice as long to resolve,mean resolution 18.1h (negative) vs 9.1h (non-negative); Cohen's d=1.90; resolution time alone separates them with AUC=0.91
+P3,signal,Rating and CSAT are near-redundant measures of the same experience,"Spearman rho(rating, CSAT)=0.97; both fall with resolution time (rho=-0.46)"
+P4,null,"No issue, channel, region, product or source is significantly worse than the rest","chi-square p-values Issue 0.33, Channel 0.27, Region 0.69, Product 0.79, Source 0.82; 314 cells scanned, 13 raw p<0.05 (expected 16 by chance), 0 survive FDR (min q=0.20)"
+P5,null,Revenue and order count are unrelated to sentiment (negative feedback is not confined to low-value records),"mean revenue Negative INR 6,418 vs Positive INR 6,233 (Kruskal p=0.46); revenue is statistically uniform (KS p=0.50)"

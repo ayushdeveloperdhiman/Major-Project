@@ -1,0 +1,123 @@
+{
+  "chosen_model": "TF-IDF + Logistic Regression",
+  "reference_label_is_rating_derived": true,
+  "cv5": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa": 1.0,
+    "mcc": 1.0,
+    "roc_auc_ovr_macro": 1.0,
+    "log_loss": 0.0623099672904
+  },
+  "holdout": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "cohen_kappa": 1.0,
+    "mcc": 1.0,
+    "roc_auc_ovr_macro": 1.0
+  },
+  "holdout_ci": {
+    "accuracy_ci": [
+      1.0,
+      1.0
+    ],
+    "macro_f1_ci": [
+      1.0,
+      1.0
+    ]
+  },
+  "holdout_n": 480,
+  "lodo": {
+    "accuracy": 0.570833333333,
+    "macro_f1": 0.242263483643,
+    "cohen_kappa": 0.0
+  },
+  "vader": {
+    "cv5_accuracy": 0.60625,
+    "cv5_macro_f1": 0.478202078826
+  },
+  "majority_baseline_accuracy": 0.570833333333,
+  "hybrid": {
+    "cv5_macro_f1": 1.0,
+    "lodo_macro_f1": 0.400343895849,
+    "lodo_accuracy": 0.579166666667
+  },
+  "ablation": {
+    "Full text": 1.0,
+    "Descriptor word MASKED (topic / channel / product words only)": 0.341666666667,
+    "Descriptor word ONLY": 1.0,
+    "Majority-class baseline": 0.570833333333
+  },
+  "ood_probe_accuracy": {
+    "TF-IDF+LR (trained on supplied data)": 0.7,
+    "Hybrid TF-IDF+VADER": 0.866666666667,
+    "VADER lexicon": 0.8
+  },
+  "ood_probe_n": 30,
+  "tuning_best": {
+    "params": {
+      "C": 1.0,
+      "ngram_range": "(1, 1)"
+    },
+    "n_configs": 8,
+    "n_tied_on_macro_f1": 8,
+    "cv_macro_f1": 1.0,
+    "cv_log_loss": 0.0744117111673
+  },
+  "vader_words_scored_zero": [
+    "average",
+    "fast",
+    "late",
+    "normal",
+    "slow",
+    "smooth",
+    "standard",
+    "unhelpful"
+  ],
+  "vader_lowest_accuracy_words": [
+    {
+      "descriptor": "normal",
+      "true": "Neutral",
+      "vader_accuracy": 0.0
+    },
+    {
+      "descriptor": "standard",
+      "true": "Neutral",
+      "vader_accuracy": 0.0
+    },
+    {
+      "descriptor": "average",
+      "true": "Neutral",
+      "vader_accuracy": 0.0
+    },
+    {
+      "descriptor": "acceptable",
+      "true": "Neutral",
+      "vader_accuracy": 0.0
+    },
+    {
+      "descriptor": "smooth",
+      "true": "Positive",
+      "vader_accuracy": 0.280612244898
+    },
+    {
+      "descriptor": "fast",
+      "true": "Positive",
+      "vader_accuracy": 0.301675977654
+    },
+    {
+      "descriptor": "okay",
+      "true": "Neutral",
+      "vader_accuracy": 0.458823529412
+    },
+    {
+      "descriptor": "unhelpful",
+      "true": "Negative",
+      "vader_accuracy": 0.674418604651
+    }
+  ],
+  "n_oof_misclassified": 0,
+  "agreement_pred_vs_reference": 1.0
+}

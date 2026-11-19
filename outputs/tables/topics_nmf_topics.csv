@@ -1,0 +1,9 @@
+nmf_topic_id,top_words,documents,share,majority_issue_category,purity
+0,"availability, product",315,0.13125,Product Availability,1.0
+1,"refund, delay",299,0.12458333333333334,Refund Delay,1.0
+2,price,323,0.13458333333333333,Pricing,1.0
+3,"support, customer",300,0.125,Customer Support,1.0
+4,app,298,0.12416666666666666,App Experience,1.0
+5,package,271,0.11291666666666667,Packaging,1.0
+6,"quality, product",298,0.12416666666666666,Product Quality,1.0
+7,"delivery, delay",296,0.12333333333333334,Delivery Delay,1.0

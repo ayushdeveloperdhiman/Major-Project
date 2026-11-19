@@ -1,0 +1,190 @@
+{
+  "taxonomy_accuracy_vs_issue": 1.0,
+  "taxonomy_unclassified": 0,
+  "taxonomy_multiple": 0,
+  "nmf": {
+    "k": 8,
+    "nmi_vs_issue": 1.0,
+    "ari_vs_issue": 1.0,
+    "purity_vs_issue": 1.0,
+    "coherence_npmi": 0.732477543236
+  },
+  "lda": {
+    "k": 8,
+    "nmi_vs_issue": 0.907782599389,
+    "ari_vs_issue": 0.759473633714,
+    "purity_vs_issue": 0.7525,
+    "perplexity": 10.5146145651,
+    "coherence_npmi": -0.0802308109815
+  },
+  "k_selected_internal": 8,
+  "opinion_words_removed": [
+    "acceptable",
+    "average",
+    "break",
+    "confuse",
+    "disappoint",
+    "easy",
+    "excellent",
+    "fast",
+    "good",
+    "helpful",
+    "late",
+    "normal",
+    "okay",
+    "poor",
+    "satisfy",
+    "slow",
+    "smooth",
+    "standard",
+    "unhelpful"
+  ],
+  "n_opinion_words": 19,
+  "views_at_selected_k": {
+    "A. full text": {
+      "k": 4.0,
+      "coherence_npmi": 0.0617769587689,
+      "stability_ari_seed1_vs_seed2": 0.997949376112,
+      "nmi_vs_issue": 0.722112468401,
+      "purity_vs_issue": 0.502083333333,
+      "empty_topics": 0.0
+    },
+    "B. opinion clause": {
+      "k": 9.0,
+      "coherence_npmi": 0.422352382935,
+      "stability_ari_seed1_vs_seed2": 0.80011344609,
+      "nmi_vs_issue": 0.762592307801,
+      "purity_vs_issue": 0.767916666667,
+      "empty_topics": 0.0
+    },
+    "C. opinion clause, aspect words only": {
+      "k": 8.0,
+      "coherence_npmi": 0.732477543236,
+      "stability_ari_seed1_vs_seed2": 0.865860833568,
+      "nmi_vs_issue": 1.0,
+      "purity_vs_issue": 1.0,
+      "empty_topics": 0.0
+    }
+  },
+  "theme_vs_sentiment": {
+    "chi2": 15.796874758,
+    "dof": 14,
+    "p": 0.325935727128,
+    "cramers_v": 0.0573673737815
+  },
+  "top_theme_by_share": "Pricing",
+  "top_theme_share": 0.134583333333,
+  "theme_share_range_pp": 2.16666666667,
+  "theme_composition_tests": [
+    {
+      "segment_dimension": "channel",
+      "chi2": 18.3970644192,
+      "dof": 21,
+      "p_value": 0.623757020641,
+      "cramers_v": 0.0505484701647,
+      "q_bh": 0.623757020641
+    },
+    {
+      "segment_dimension": "region",
+      "chi2": 31.0190370374,
+      "dof": 28,
+      "p_value": 0.316235824906,
+      "cramers_v": 0.0568432026842,
+      "q_bh": 0.623757020641
+    },
+    {
+      "segment_dimension": "product_category",
+      "chi2": 27.8123973258,
+      "dof": 28,
+      "p_value": 0.474421894067,
+      "cramers_v": 0.0538249451596,
+      "q_bh": 0.623757020641
+    },
+    {
+      "segment_dimension": "feedback_source",
+      "chi2": 33.9446892392,
+      "dof": 28,
+      "p_value": 0.202700285145,
+      "cramers_v": 0.0594634772704,
+      "q_bh": 0.623757020641
+    }
+  ],
+  "negative_descriptor_theme_shares": {
+    "Quality / defect": 0.313691507799,
+    "Usability / helpfulness": 0.275563258232,
+    "Speed / timeliness": 0.266897746967,
+    "Emotional reaction": 0.143847487002
+  },
+  "negative_descriptor_theme_tests": {
+    "resolution_time_hours": 0.863622334594,
+    "customer_revenue_inr": 0.929080889584,
+    "order_count": 0.717083366252,
+    "repeat_chi2_p": 0.954576651333
+  },
+  "nmf_topic_summary": [
+    {
+      "nmf_topic_id": 0,
+      "top_words": "availability, product",
+      "documents": 315,
+      "share": 0.13125,
+      "majority_issue_category": "Product Availability",
+      "purity": 1.0
+    },
+    {
+      "nmf_topic_id": 1,
+      "top_words": "refund, delay",
+      "documents": 299,
+      "share": 0.124583333333,
+      "majority_issue_category": "Refund Delay",
+      "purity": 1.0
+    },
+    {
+      "nmf_topic_id": 2,
+      "top_words": "price",
+      "documents": 323,
+      "share": 0.134583333333,
+      "majority_issue_category": "Pricing",
+      "purity": 1.0
+    },
+    {
+      "nmf_topic_id": 3,
+      "top_words": "support, customer",
+      "documents": 300,
+      "share": 0.125,
+      "majority_issue_category": "Customer Support",
+      "purity": 1.0
+    },
+    {
+      "nmf_topic_id": 4,
+      "top_words": "app",
+      "documents": 298,
+      "share": 0.124166666667,
+      "majority_issue_category": "App Experience",
+      "purity": 1.0
+    },
+    {
+      "nmf_topic_id": 5,
+      "top_words": "package",
+      "documents": 271,
+      "share": 0.112916666667,
+      "majority_issue_category": "Packaging",
+      "purity": 1.0
+    },
+    {
+      "nmf_topic_id": 6,
+      "top_words": "quality, product",
+      "documents": 298,
+      "share": 0.124166666667,
+      "majority_issue_category": "Product Quality",
+      "purity": 1.0
+    },
+    {
+      "nmf_topic_id": 7,
+      "top_words": "delivery, delay",
+      "documents": 296,
+      "share": 0.123333333333,
+      "majority_issue_category": "Delivery Delay",
+      "purity": 1.0
+    }
+  ]
+}

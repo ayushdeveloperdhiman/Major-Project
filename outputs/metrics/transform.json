@@ -1,0 +1,70 @@
+{
+  "rows_bronze": 2400,
+  "rows_silver": 2400,
+  "rows_quarantined": 0,
+  "silver_columns": 37,
+  "dq_raw": {
+    "rows": 2400,
+    "rows_failing_error_rules": 0,
+    "pct_rows_passing_all_error_rules": 100.0,
+    "rows_with_any_warning": 397,
+    "pct_rows_fully_clean": 83.458,
+    "dimension_pass_rate_pct": {
+      "Completeness": 100.0,
+      "Consistency": 83.46,
+      "Uniqueness": 100.0,
+      "Validity": 100.0
+    },
+    "n_rules": 36,
+    "n_rules_pass": 28,
+    "n_rules_fail": 0,
+    "n_rules_warn": 5,
+    "n_rules_info": 3
+  },
+  "dq_clean": {
+    "rows": 2400,
+    "rows_failing_error_rules": 0,
+    "pct_rows_passing_all_error_rules": 100.0,
+    "rows_with_any_warning": 113,
+    "pct_rows_fully_clean": 95.292,
+    "dimension_pass_rate_pct": {
+      "Completeness": 100.0,
+      "Consistency": 95.29,
+      "Uniqueness": 100.0,
+      "Validity": 100.0
+    },
+    "n_rules": 36,
+    "n_rules_pass": 29,
+    "n_rules_fail": 0,
+    "n_rules_warn": 4,
+    "n_rules_info": 3
+  },
+  "findings": {
+    "repeat_without_orders_rows": 113,
+    "repeated_word_glitch_rows_raw": 298,
+    "repeated_word_glitch_rows_clean": 0,
+    "resolution_floor_censored_rows": 109,
+    "resolution_mild_outliers": 12,
+    "region_unstable_pct_of_multi_record_customers": 89.488,
+    "revenue_unstable_pct_of_multi_record_customers": 100.0,
+    "text_template_pct": 100.0,
+    "same_customer_same_text_rows": 1
+  },
+  "derivation_params": {
+    "revenue_quartile_edges": [
+      3486.55,
+      6397.885,
+      9085.6425
+    ],
+    "sla_target_hours": 12.0,
+    "critical_delay_hours": 18.0,
+    "res_band_edges": [
+      0.0,
+      6.0,
+      12.0,
+      18.0,
+      24.0,
+      "inf"
+    ]
+  }
+}

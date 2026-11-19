@@ -1,0 +1,257 @@
+{
+  "kpis_reference": {
+    "feedback_count": 2400,
+    "negative_count": 577,
+    "negative_sentiment_rate": 0.240416666667,
+    "negative_rate_ci": [
+      0.223743416945,
+      0.257919570688
+    ],
+    "positive_sentiment_rate": 0.570833333333,
+    "neutral_sentiment_rate": 0.18875,
+    "net_sentiment_score": 33.0416666667,
+    "repeat_purchase_rate": 0.574583333333,
+    "repeat_rate_ci": [
+      0.554699599425,
+      0.594228691448
+    ],
+    "avg_resolution_hours": 11.2562083333,
+    "avg_csat": 3.46191666667,
+    "avg_rating": 3.48125,
+    "total_revenue_inr": 15124903.57,
+    "revenue_at_risk_inr": 3703115.01,
+    "revenue_at_risk_share": 0.244835611206,
+    "sla_breach_rate": 0.429166666667,
+    "critical_delay_rate": 0.140833333333,
+    "negative_avg_resolution_hours": 18.113864818,
+    "non_negative_avg_resolution_hours": 9.08568294021,
+    "negative_repeat_rate": 0.282495667244,
+    "positive_repeat_rate": 0.720437956204,
+    "negative_sla_breach_rate": 0.911611785095
+  },
+  "dimension_tests": [
+    {
+      "dimension": "Issue",
+      "levels": 8,
+      "chi2": 15.796874758,
+      "dof": 14,
+      "p_value": 0.325935727128,
+      "cramers_v": 0.0573673737815,
+      "neg_rate_min": 0.215873015873,
+      "neg_rate_max": 0.286666666667,
+      "neg_rate_range_pp": 7.07936507937,
+      "highest_neg_level": "Customer Support",
+      "lowest_neg_level": "Product Availability",
+      "resolution_within_negative_kruskal_p": 0.885474758906,
+      "significant_at_5pct": false,
+      "p_bonferroni": 1.0
+    },
+    {
+      "dimension": "Channel",
+      "levels": 4,
+      "chi2": 7.60595746838,
+      "dof": 6,
+      "p_value": 0.268415900944,
+      "cramers_v": 0.0398067139133,
+      "neg_rate_min": 0.228187919463,
+      "neg_rate_max": 0.258007117438,
+      "neg_rate_range_pp": 2.98191979746,
+      "highest_neg_level": "Store",
+      "lowest_neg_level": "Web",
+      "resolution_within_negative_kruskal_p": 0.852561373062,
+      "significant_at_5pct": false,
+      "p_bonferroni": 1.0
+    },
+    {
+      "dimension": "Region",
+      "levels": 5,
+      "chi2": 5.65110649477,
+      "dof": 8,
+      "p_value": 0.686247294755,
+      "cramers_v": 0.0343120074183,
+      "neg_rate_min": 0.213389121339,
+      "neg_rate_max": 0.261851015801,
+      "neg_rate_range_pp": 4.84618944624,
+      "highest_neg_level": "Central",
+      "lowest_neg_level": "West",
+      "resolution_within_negative_kruskal_p": 0.406558718451,
+      "significant_at_5pct": false,
+      "p_bonferroni": 1.0
+    },
+    {
+      "dimension": "Product",
+      "levels": 5,
+      "chi2": 4.67321964021,
+      "dof": 8,
+      "p_value": 0.791863296578,
+      "cramers_v": 0.0312023624914,
+      "neg_rate_min": 0.218487394958,
+      "neg_rate_max": 0.262931034483,
+      "neg_rate_range_pp": 4.44436395248,
+      "highest_neg_level": "Electronics",
+      "lowest_neg_level": "Beauty",
+      "resolution_within_negative_kruskal_p": 0.281221056297,
+      "significant_at_5pct": false,
+      "p_bonferroni": 1.0
+    },
+    {
+      "dimension": "Source",
+      "levels": 5,
+      "chi2": 4.41021747034,
+      "dof": 8,
+      "p_value": 0.818346915826,
+      "cramers_v": 0.0303116364837,
+      "neg_rate_min": 0.219461697723,
+      "neg_rate_max": 0.257206208426,
+      "neg_rate_range_pp": 3.77445107032,
+      "highest_neg_level": "Social",
+      "lowest_neg_level": "Survey",
+      "resolution_within_negative_kruskal_p": 0.225209433472,
+      "significant_at_5pct": false,
+      "p_bonferroni": 1.0
+    }
+  ],
+  "hotspot": {
+    "tests": 314,
+    "raw_p_lt_0.05": 13,
+    "expected_by_chance": 15.7,
+    "min_p": 0.00114639009754,
+    "min_q_bh": 0.196873270675,
+    "significant_after_fdr": 0,
+    "most_extreme_cell": "region x feedback_source: West | Survey (11.0%, n=100)"
+  },
+  "sentiment_outcomes": {
+    "repeat_vs_sentiment_chi2": 329.46047139,
+    "repeat_vs_sentiment_p": 2.87453522583e-72,
+    "repeat_vs_sentiment_cramers_v": 0.37050667526,
+    "repeat_gap_pos_minus_neg_pp": 43.794228896,
+    "resolution_kruskal_p": 2.80305589327e-191,
+    "resolution_cohens_d_neg_vs_nonneg": 1.90479567605,
+    "resolution_mannwhitney_p": 7.71703054308e-193,
+    "revenue_kruskal_p": 0.464691718751,
+    "revenue_cohens_d_neg_vs_nonneg": 0.0463107400628,
+    "orders_kruskal_p": 0.253267891057
+  },
+  "resolution_threshold": {
+    "auc_resolution_predicts_negative": 0.908523478639,
+    "youden_threshold_hours": 12.5,
+    "youden_tpr": 0.894280762565,
+    "youden_fpr": 0.25068568294
+  },
+  "customer_structure": {
+    "customers": 1114,
+    "multi_record_customers": 723,
+    "records_in_multi": 2009,
+    "records_per_customer_max": 6,
+    "icc_rating": -0.0231007138515,
+    "icc_p": 0.835365054603,
+    "customers_with_2plus_negative_observed": 100,
+    "customers_with_2plus_negative_expected": 93.2835,
+    "customers_with_2plus_negative_perm_p": 0.146426786607,
+    "attribute_instability_share": {
+      "region": 0.894882434302,
+      "customer_revenue_inr": 1.0,
+      "order_count": 0.954356846473,
+      "repeat_purchase_flag": 0.634854771784,
+      "channel": 0.874135546335,
+      "product_category": 0.889349930844
+    }
+  },
+  "sequence_drift": {
+    "spearman_seq_vs_negative": -0.00846724447097,
+    "p": 0.678434819037,
+    "chi2_blocks_p": 0.325255542348,
+    "block_negative_rates": [
+      0.2333,
+      0.24,
+      0.2833,
+      0.2467,
+      0.2033,
+      0.25,
+      0.2067,
+      0.26
+    ]
+  },
+  "material_patterns": [
+    {
+      "id": "P1",
+      "type": "signal",
+      "pattern": "Negative feedback is strongly tied to lower repeat purchase",
+      "evidence": "repeat rate Negative 28.2% vs Neutral 50.6% vs Positive 72.0% (chi2=329, p=2.9e-72, Cramer's V=0.37)"
+    },
+    {
+      "id": "P2",
+      "type": "signal",
+      "pattern": "Negative cases take about twice as long to resolve",
+      "evidence": "mean resolution 18.1h (negative) vs 9.1h (non-negative); Cohen's d=1.90; resolution time alone separates them with AUC=0.91"
+    },
+    {
+      "id": "P3",
+      "type": "signal",
+      "pattern": "Rating and CSAT are near-redundant measures of the same experience",
+      "evidence": "Spearman rho(rating, CSAT)=0.97; both fall with resolution time (rho=-0.46)"
+    },
+    {
+      "id": "P4",
+      "type": "null",
+      "pattern": "No issue, channel, region, product or source is significantly worse than the rest",
+      "evidence": "chi-square p-values Issue 0.33, Channel 0.27, Region 0.69, Product 0.79, Source 0.82; 314 cells scanned, 13 raw p<0.05 (expected 16 by chance), 0 survive FDR (min q=0.20)"
+    },
+    {
+      "id": "P5",
+      "type": "null",
+      "pattern": "Revenue and order count are unrelated to sentiment (negative feedback is not confined to low-value records)",
+      "evidence": "mean revenue Negative INR 6,418 vs Positive INR 6,233 (Kruskal p=0.46); revenue is statistically uniform (KS p=0.50)"
+    }
+  ],
+  "spearman": {
+    "rating": {
+      "rating": 1.0,
+      "csat_score": 0.972056372743,
+      "customer_revenue_inr": -0.0330226729972,
+      "order_count": 0.0359176853106,
+      "repeat_purchase_flag": 0.355877942673,
+      "resolution_time_hours": -0.46499304373
+    },
+    "csat_score": {
+      "rating": 0.972056372743,
+      "csat_score": 1.0,
+      "customer_revenue_inr": -0.036964783122,
+      "order_count": 0.0385303946614,
+      "repeat_purchase_flag": 0.34663794681,
+      "resolution_time_hours": -0.439784403375
+    },
+    "customer_revenue_inr": {
+      "rating": -0.0330226729972,
+      "csat_score": -0.036964783122,
+      "customer_revenue_inr": 1.0,
+      "order_count": 0.0124641538915,
+      "repeat_purchase_flag": -0.0113370569307,
+      "resolution_time_hours": 0.0106644299177
+    },
+    "order_count": {
+      "rating": 0.0359176853106,
+      "csat_score": 0.0385303946614,
+      "customer_revenue_inr": 0.0124641538915,
+      "order_count": 1.0,
+      "repeat_purchase_flag": 0.0223560797772,
+      "resolution_time_hours": -0.00944393024894
+    },
+    "repeat_purchase_flag": {
+      "rating": 0.355877942673,
+      "csat_score": 0.34663794681,
+      "customer_revenue_inr": -0.0113370569307,
+      "order_count": 0.0223560797772,
+      "repeat_purchase_flag": 1.0,
+      "resolution_time_hours": -0.222996521858
+    },
+    "resolution_time_hours": {
+      "rating": -0.46499304373,
+      "csat_score": -0.439784403375,
+      "customer_revenue_inr": 0.0106644299177,
+      "order_count": -0.00944393024894,
+      "repeat_purchase_flag": -0.222996521858,
+      "resolution_time_hours": 1.0
+    }
+  }
+}

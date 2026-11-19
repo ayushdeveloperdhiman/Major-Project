@@ -1,0 +1,10 @@
+class,precision,recall,f1,support,model
+Negative,1.0,1.0,1.0,577,TF-IDF + Logistic Regression (cv5 OOF)
+Neutral,1.0,1.0,1.0,453,TF-IDF + Logistic Regression (cv5 OOF)
+Positive,1.0,1.0,1.0,1370,TF-IDF + Logistic Regression (cv5 OOF)
+Negative,0.4392156862745098,0.7764298093587522,0.5610519724483406,577,VADER lexicon
+Neutral,0.2708333333333333,0.08609271523178808,0.1306532663316583,453,VADER lexicon
+Positive,0.7831715210355987,0.7065693430656934,0.7429009976976209,1370,VADER lexicon
+Negative,0.0,0.0,0.0,577,Majority baseline
+Neutral,0.0,0.0,0.0,453,Majority baseline
+Positive,0.5708333333333333,1.0,0.726790450928382,1370,Majority baseline

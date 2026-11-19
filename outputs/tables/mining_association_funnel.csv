@@ -1,0 +1,9 @@
+,count
+frequent_itemsets,2469
+rules_all_lift_ge_1,6827
+rules_with_target_consequent,339
+rules_lift_ge_1.2,158
+rules_significant_fdr_assoc,157
+rules_robust_after_productivity,7
+robust_rules_using_only_context_dimensions,0
+robust_rules_containing_any_context_item,0

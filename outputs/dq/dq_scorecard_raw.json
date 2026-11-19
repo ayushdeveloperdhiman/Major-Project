@@ -1,0 +1,18 @@
+{
+  "rows": 2400,
+  "rows_failing_error_rules": 0,
+  "pct_rows_passing_all_error_rules": 100.0,
+  "rows_with_any_warning": 397,
+  "pct_rows_fully_clean": 83.458,
+  "dimension_pass_rate_pct": {
+    "Completeness": 100.0,
+    "Consistency": 83.46,
+    "Uniqueness": 100.0,
+    "Validity": 100.0
+  },
+  "n_rules": 36,
+  "n_rules_pass": 28,
+  "n_rules_fail": 0,
+  "n_rules_warn": 5,
+  "n_rules_info": 3
+}

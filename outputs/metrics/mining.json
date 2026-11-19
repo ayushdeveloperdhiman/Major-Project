@@ -1,0 +1,166 @@
+{
+  "segmentation": {
+    "features": [
+      "csat_score",
+      "resolution_time_hours",
+      "repeat_purchase_flag"
+    ],
+    "k": 3,
+    "silhouette": 0.458584658771,
+    "calinski_harabasz": 2128.2805451,
+    "davies_bouldin": 0.862697133679,
+    "null_silhouette_p95": 0.356800417711,
+    "k_values_beating_null": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "stability": {
+      "mean_ari": 0.992508128263,
+      "min_ari": 0.978535850772,
+      "p05_ari": 0.987423787611,
+      "bootstrap_runs": 50
+    },
+    "nmi_segment_vs_sentiment": 0.458219513884,
+    "at_risk_negative_purity": 0.936860068259,
+    "share_of_negatives_in_at_risk": 0.951473136915,
+    "segment_sizes": {
+      "Loyal Repeaters": 1228,
+      "At-Risk": 586,
+      "Satisfied Non-Repeaters": 586
+    },
+    "context_tests_min_q": 0.506393582306,
+    "pca_explained": [
+      0.582503536981,
+      0.262757569338
+    ],
+    "methods_ari_vs_kmeans": {
+      "K-means": 1.0,
+      "Ward hierarchical": 0.893510501842,
+      "Gaussian mixture": 0.650270156379
+    },
+    "value_space_beats_null": false,
+    "value_space_silhouette_k4": 0.411349151214,
+    "value_space_null_k4": 0.411531903099
+  },
+  "association_rules": {
+    "funnel": {
+      "frequent_itemsets": 2469,
+      "rules_all_lift_ge_1": 6827,
+      "rules_with_target_consequent": 339,
+      "rules_lift_ge_1.2": 158,
+      "rules_significant_fdr_assoc": 157,
+      "rules_robust_after_productivity": 7,
+      "robust_rules_using_only_context_dimensions": 0,
+      "robust_rules_containing_any_context_item": 0
+    },
+    "min_support": 0.02,
+    "max_len": 3,
+    "min_lift": 1.2,
+    "robust_rules": [
+      {
+        "antecedent": "Repeat=No & Resolution=>18h",
+        "consequent": "Sentiment=Negative",
+        "antecedent_size": 2,
+        "support": 0.0870833333333,
+        "confidence": 0.904761904762,
+        "lift": 3.76330774944,
+        "leverage": 0.0639432291667,
+        "conviction": 7.975625,
+        "best_parent_confidence": 0.843195266272,
+        "p_assoc": 4.24885219173e-116,
+        "p_productive": 9.71103986148e-06,
+        "q_final_bh": 0.000219192042588
+      },
+      {
+        "antecedent": "Resolution=>18h",
+        "consequent": "Sentiment=Negative",
+        "antecedent_size": 1,
+        "support": 0.11875,
+        "confidence": 0.843195266272,
+        "lift": 3.50722467774,
+        "leverage": 0.0848913194444,
+        "conviction": 4.84413522013,
+        "best_parent_confidence": NaN,
+        "p_assoc": 1.07299444366e-147,
+        "p_productive": 0.0,
+        "q_final_bh": 1.69533122098e-145
+      },
+      {
+        "antecedent": "Repeat=No & Resolution=12-18h",
+        "consequent": "Sentiment=Negative",
+        "antecedent_size": 2,
+        "support": 0.0725,
+        "confidence": 0.520958083832,
+        "lift": 2.16689670918,
+        "leverage": 0.0390420138889,
+        "conviction": 1.58563020833,
+        "best_parent_confidence": 0.405484818805,
+        "p_assoc": 1.29786293658e-33,
+        "p_productive": 1.28965964445e-07,
+        "q_final_bh": 3.39610373039e-06
+      },
+      {
+        "antecedent": "Repeat=No",
+        "consequent": "Sentiment=Negative",
+        "antecedent_size": 1,
+        "support": 0.1725,
+        "confidence": 0.405484818805,
+        "lift": 1.6865919673,
+        "leverage": 0.0702227430556,
+        "conviction": 1.27765170236,
+        "best_parent_confidence": NaN,
+        "p_assoc": 6.6381912258e-60,
+        "p_productive": 0.0,
+        "q_final_bh": 3.49611404559e-58
+      },
+      {
+        "antecedent": "Sentiment=Negative",
+        "consequent": "Repeat=No",
+        "antecedent_size": 1,
+        "support": 0.1725,
+        "confidence": 0.717504332756,
+        "lift": 1.6865919673,
+        "leverage": 0.0702227430556,
+        "conviction": 2.03395449898,
+        "best_parent_confidence": NaN,
+        "p_assoc": 6.6381912258e-60,
+        "p_productive": 0.0,
+        "q_final_bh": 3.49611404559e-58
+      },
+      {
+        "antecedent": "Resolution=>18h",
+        "consequent": "Repeat=No",
+        "antecedent_size": 1,
+        "support": 0.09625,
+        "confidence": 0.683431952663,
+        "lift": 1.60650018256,
+        "leverage": 0.0363371527778,
+        "conviction": 1.81503894081,
+        "best_parent_confidence": NaN,
+        "p_assoc": 4.86593359207e-25,
+        "p_productive": 0.0,
+        "q_final_bh": 1.92204376887e-23
+      },
+      {
+        "antecedent": "Resolution=12-18h",
+        "consequent": "Sentiment=Negative",
+        "antecedent_size": 1,
+        "support": 0.100416666667,
+        "confidence": 0.348265895954,
+        "lift": 1.44859298144,
+        "leverage": 0.0310965277778,
+        "conviction": 1.1654804139,
+        "best_parent_confidence": NaN,
+        "p_assoc": 1.0426244651e-14,
+        "p_productive": 0.0,
+        "q_final_bh": 3.29469330971e-13
+      }
+    ],
+    "n_transactions": 2400,
+    "n_items": 42
+  }
+}

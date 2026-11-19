@@ -1,0 +1,3 @@
+model,k,nmi_vs_issue,ari_vs_issue,purity_vs_issue,coherence_npmi,perplexity
+NMF (TF-IDF),8,1.0,1.0,1.0,0.7324775432360062,
+LDA (counts),8,0.9077825993887141,0.7594736337144441,0.7525,-0.08023081098151567,10.51461456505449

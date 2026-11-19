@@ -1,0 +1,4 @@
+csat_score,resolution_time_hours,repeat_purchase_flag,segment_name,z_csat_score,z_resolution_time_hours,z_repeat_purchase_flag
+4.123452769,8.972394137,1,Loyal Repeaters,0.524046245,-0.373789211,0.860460103
+1.67116041,18.49334471,0.257679181,At-Risk,-1.41857578,1.184493687,-0.64097954
+3.866382253,8.804948805,0,Satisfied Non-Repeaters,0.320403786,-0.401194794,-1.162168934

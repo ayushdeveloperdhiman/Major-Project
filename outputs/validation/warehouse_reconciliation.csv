@@ -1,0 +1,15 @@
+check_id,description,expected,actual,status
+WH-01,fact_feedback rows == Silver rows,2400.0,2400.0,PASS
+WH-02,feedback_text rows == Silver rows,2400.0,2400.0,PASS
+WH-03,distinct feedback_id in fact == Silver,2400.0,2400.0,PASS
+WH-04,"SUM(customer_revenue_inr) fact == Silver (INR, tol 0.01)",15124903.57,15124903.57,PASS
+WH-05,dim_customer rows == distinct Customer_ID,1114.0,1114.0,PASS
+WH-06,Foreign-key violations (PRAGMA foreign_key_check),0.0,0.0,PASS
+WH-07,SQLite integrity_check returns 'ok',1.0,1.0,PASS
+WH-08,Fact rows with NULL dimension keys,0.0,0.0,PASS
+WH-09,SUM(order_count) fact == Silver,15548.0,15548.0,PASS
+WH-10,vw_feedback_360 rows == fact rows (no join fan-out),2400.0,2400.0,PASS
+WH-11,fact_feedback_nlp rows == fact rows,2400.0,2400.0,PASS
+WH-12,fact_feedback_segment rows == fact rows,2400.0,2400.0,PASS
+WH-13,FK violations after analytics load,0.0,0.0,PASS
+WH-14,vw_feedback_360 still one row per feedback (no fan-out),2400.0,2400.0,PASS

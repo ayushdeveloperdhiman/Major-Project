@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-09 09:24:13",
+  "runs": 2,
+  "seconds_per_run": [
+    119.6,
+    126.1
+  ],
+  "files_compared": 78,
+  "identical": 78,
+  "different": [],
+  "excluded_by_design": [
+    "outputs/metrics/ingest.json",
+    "outputs/run_manifest.json",
+    "outputs/figures/*.png",
+    "outputs/models/*.joblib"
+  ],
+  "result": "PASS"
+}

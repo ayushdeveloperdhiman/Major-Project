@@ -1,0 +1,289 @@
+{
+  "kpis_predicted": {
+    "feedback_count": 2400,
+    "negative_count": 577,
+    "negative_sentiment_rate": 0.240416666667,
+    "negative_rate_ci": [
+      0.223743416945,
+      0.257919570688
+    ],
+    "positive_sentiment_rate": 0.570833333333,
+    "neutral_sentiment_rate": 0.18875,
+    "net_sentiment_score": 33.0416666667,
+    "repeat_purchase_rate": 0.574583333333,
+    "repeat_rate_ci": [
+      0.554699599425,
+      0.594228691448
+    ],
+    "avg_resolution_hours": 11.2562083333,
+    "avg_csat": 3.46191666667,
+    "avg_rating": 3.48125,
+    "total_revenue_inr": 15124903.57,
+    "revenue_at_risk_inr": 3703115.01,
+    "revenue_at_risk_share": 0.244835611206,
+    "sla_breach_rate": 0.429166666667,
+    "critical_delay_rate": 0.140833333333,
+    "negative_avg_resolution_hours": 18.113864818,
+    "non_negative_avg_resolution_hours": 9.08568294021,
+    "negative_repeat_rate": 0.282495667244,
+    "positive_repeat_rate": 0.720437956204,
+    "negative_sla_breach_rate": 0.911611785095
+  },
+  "driver": {
+    "key_terms": [
+      {
+        "term": "res_z (alone)",
+        "odds_ratio": 0.616010848388,
+        "ci_lo": 0.565227937047,
+        "ci_hi": 0.671356351057,
+        "p_value": 2.53005414625e-28,
+        "label": "Resolution time alone (per +1 SD, unadjusted)"
+      },
+      {
+        "term": "sent[T.Neutral]",
+        "odds_ratio": 0.394328605597,
+        "ci_lo": 0.316286039625,
+        "ci_hi": 0.491627924446,
+        "p_value": 1.3375971197e-16,
+        "label": "Neutral vs Positive sentiment"
+      },
+      {
+        "term": "sent[T.Negative]",
+        "odds_ratio": 0.170915382773,
+        "ci_lo": 0.130248185429,
+        "ci_hi": 0.224280038698,
+        "p_value": 3.4375365651e-37,
+        "label": "Negative vs Positive sentiment"
+      },
+      {
+        "term": "res_z",
+        "odds_ratio": 0.923225642592,
+        "ci_lo": 0.824642793778,
+        "ci_hi": 1.03359368877,
+        "p_value": 0.165602815111,
+        "label": "Resolution time (per +1 SD)"
+      },
+      {
+        "term": "rev_k",
+        "odds_ratio": 0.998265121446,
+        "ci_lo": 0.972080619975,
+        "ci_hi": 1.02515494314,
+        "p_value": 0.898119402395,
+        "label": "Revenue (per +INR 1,000)"
+      },
+      {
+        "term": "order_count",
+        "odds_ratio": 1.00947054121,
+        "ci_lo": 0.984349834022,
+        "ci_hi": 1.03523233138,
+        "p_value": 0.463484645688,
+        "label": "Order count (per +1)"
+      }
+    ],
+    "lr_tests": {
+      "resolution_given_sentiment": {
+        "chi2": 1.92136027474,
+        "dof": 1,
+        "p": 0.165706782026
+      },
+      "revenue_orders_channel_region_issue_given_sentiment_resolution": {
+        "chi2": 12.6099588858,
+        "dof": 16,
+        "p": 0.701033560985
+      },
+      "channel_region_issue_given_rest": {
+        "chi2": 12.0981132781,
+        "dof": 14,
+        "p": 0.598423675529
+      }
+    },
+    "cv_auc": {
+      "sentiment_only": 0.682879259978,
+      "sentiment_plus_resolution": 0.694378529488,
+      "sentiment_plus_all_context": 0.686456068678,
+      "resolution_only": 0.629655764124
+    },
+    "mcfadden_r2": {
+      "resolution_only": 0.0397134365916,
+      "sentiment_only": 0.102349319286,
+      "sentiment_plus_resolution": 0.102936262116,
+      "full": 0.106788389718
+    }
+  },
+  "revenue_at_risk": {
+    "total_revenue_inr": 15124903.57,
+    "revenue_at_risk_inr": 3703115.01,
+    "rar_ci": [
+      3428878.79325,
+      4013988.867
+    ],
+    "rar_share": 0.244835611206,
+    "negative_records": 577,
+    "repeat_gap_pp": 43.794228896,
+    "repeat_gap_ci_pp": [
+      39.4247219457,
+      48.1212405481
+    ],
+    "exposure_inr": 1621750.66376,
+    "exposure_ci": [
+      1420516.91701,
+      1830648.76683
+    ],
+    "exposure_pct_of_revenue": 0.107223867991,
+    "active_unhappy": {
+      "records": 163,
+      "revenue_inr": 1053721.8
+    },
+    "lapsed_unhappy": {
+      "records": 414,
+      "revenue_inr": 2649393.21
+    }
+  },
+  "scenarios": [
+    {
+      "scenario": "conservative",
+      "share_of_gap_recovered": 0.1,
+      "recoverable_revenue_inr": 162175.066376,
+      "ci_lo": 142051.691701,
+      "ci_hi": 183064.876683,
+      "pct_of_total_revenue": 0.0107223867991
+    },
+    {
+      "scenario": "base",
+      "share_of_gap_recovered": 0.25,
+      "recoverable_revenue_inr": 405437.66594,
+      "ci_lo": 355129.229253,
+      "ci_hi": 457662.191707,
+      "pct_of_total_revenue": 0.0268059669977
+    },
+    {
+      "scenario": "optimistic",
+      "share_of_gap_recovered": 0.5,
+      "recoverable_revenue_inr": 810875.331881,
+      "ci_lo": 710258.458507,
+      "ci_hi": 915324.383413,
+      "pct_of_total_revenue": 0.0536119339953
+    }
+  ],
+  "decomposition": [
+    {
+      "component": "Not at risk (positive / neutral)",
+      "records": 1823,
+      "revenue_inr": 11421788.56,
+      "share_of_total_revenue": 0.755164388794
+    },
+    {
+      "component": "Negative, still repeat-purchasing ('active but unhappy')",
+      "records": 163,
+      "revenue_inr": 1053721.8,
+      "share_of_total_revenue": 0.0696680011957
+    },
+    {
+      "component": "Negative, no repeat purchase ('lapsed unhappy')",
+      "records": 414,
+      "revenue_inr": 2649393.21,
+      "share_of_total_revenue": 0.175167610011
+    }
+  ],
+  "rank_stability": {
+    "top_issue_by_rar": {
+      "level": "Customer Support",
+      "p_rank1": 0.4335,
+      "p_top3": 0.858,
+      "uniform_chance": 0.125
+    },
+    "top_issue_by_rate": {
+      "level": "Customer Support",
+      "negative_rate": 0.286666666667,
+      "p_rank1_rate": 0.6315
+    },
+    "by_dimension_max_p_rank1_rar": {
+      "Issue": 0.4335,
+      "Theme group": 0.997,
+      "Channel": 0.6945,
+      "Region": 0.474,
+      "Product": 0.6685,
+      "Source": 0.3745
+    }
+  },
+  "critical_tier": {
+    "records": 306,
+    "revenue_inr": 2821660.52,
+    "revenue_at_risk_inr": 2648895.0,
+    "share_of_total_rar": 0.715315347443,
+    "avg_resolution_hours": 18.4078431373,
+    "repeat_rate": 0.287581699346
+  },
+  "opportunity_segment": {
+    "records": 586,
+    "share": 0.244166666667,
+    "revenue_inr": 3703538.8,
+    "avg_csat": 3.86638225256,
+    "avg_resolution_hours": 8.80494880546,
+    "scenario_conversion_pct": {
+      "5%": 185176.94,
+      "10%": 370353.88,
+      "20%": 740707.76
+    }
+  },
+  "risk_tier_counts": [
+    {
+      "risk_tier": "Critical",
+      "feedback_count": 306,
+      "revenue_at_risk_inr": 2648895.0,
+      "total_revenue_inr": 2821660.52
+    },
+    {
+      "risk_tier": "High",
+      "feedback_count": 280,
+      "revenue_at_risk_inr": 898288.78,
+      "total_revenue_inr": 971871.18
+    },
+    {
+      "risk_tier": "Opportunity",
+      "feedback_count": 586,
+      "revenue_at_risk_inr": 72736.15,
+      "total_revenue_inr": 3703538.8
+    },
+    {
+      "risk_tier": "Maintain",
+      "feedback_count": 1228,
+      "revenue_at_risk_inr": 83195.08,
+      "total_revenue_inr": 7627833.07
+    }
+  ],
+  "csat_by_predicted_sentiment": {
+    "Negative": 1.612,
+    "Neutral": 2.978,
+    "Positive": 4.401
+  },
+  "sentiment_kpis": [
+    {
+      "sent_pred": "Negative",
+      "feedback_count": 577,
+      "topic_share": 0.240416666667,
+      "repeat_rate": 0.282495667244,
+      "avg_resolution_hours": 18.113864818,
+      "avg_csat": 1.61213171577,
+      "avg_revenue_inr": 6417.87696707
+    },
+    {
+      "sent_pred": "Neutral",
+      "feedback_count": 453,
+      "topic_share": 0.18875,
+      "repeat_rate": 0.505518763797,
+      "avg_resolution_hours": 9.13222958057,
+      "avg_csat": 2.97814569536,
+      "avg_revenue_inr": 6364.1383223
+    },
+    {
+      "sent_pred": "Positive",
+      "feedback_count": 1370,
+      "topic_share": 0.570833333333,
+      "repeat_rate": 0.720437956204,
+      "avg_resolution_hours": 9.0702919708,
+      "avg_csat": 4.40094890511,
+      "avg_revenue_inr": 6232.72547445
+    }
+  ]
+}

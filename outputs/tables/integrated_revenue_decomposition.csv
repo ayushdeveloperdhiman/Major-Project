@@ -1,0 +1,4 @@
+component,records,revenue_inr,share_of_total_revenue
+Not at risk (positive / neutral),1823,11421788.56,0.7551643887935214
+"Negative, still repeat-purchasing ('active but unhappy')",163,1053721.8,0.06966800119572597
+"Negative, no repeat purchase ('lapsed unhappy')",414,2649393.2099999995,0.17516761001075257

@@ -1,0 +1,9 @@
+step,description,rows_in,rows_out,cells_changed
+TR-01,"NFKC-normalise, trim, collapse whitespace on all string fields",2400,2400,0
+TR-02,Map categoricals to canonical casing; blank -> 'Unknown',2400,2400,0
+TR-03,"Coerce numeric fields (unparseable -> NaN, no imputation of outcome measures)",2400,2400,0
+TR-04,Quarantine rows failing error rules / duplicates (keep first occurrence),2400,2400,0
+TR-05,Collapse repeated adjacent words in text_clean (template glitch 'experience experience'),2400,2400,298
+TR-07,Derive text features: character and word counts,2400,2400,0
+TR-06,"Derive resolution/SLA bands, revenue tiers, order bands, AOV, theme/channel/source classes, flags",2400,2400,0
+TR-08,"Strict typing, deterministic ordering by feedback_id, lineage retained",2400,2400,0

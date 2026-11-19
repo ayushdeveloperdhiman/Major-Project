@@ -1,0 +1,88 @@
+{
+  "project": "MSDS-MAJOR-CVI-001",
+  "client": "InsightRetail India (anonymised)",
+  "run_at_utc": "2026-11-09T15:56:49+00:00",
+  "last_run_stages": [
+    "ingest",
+    "transform",
+    "warehouse",
+    "eda",
+    "sentiment",
+    "topics",
+    "mining",
+    "analytics_load",
+    "integrate",
+    "decision",
+    "figures",
+    "validate"
+  ],
+  "input": {
+    "file": "Client Data Set for Student Project Workbook.xlsx",
+    "sha256": "028d65da7b2e1d1d5bcbe6c83754c164f54e02bd29e3a0d86b5ff2e3bf2b708d",
+    "rows": 2400,
+    "columns": 15
+  },
+  "seed": 42,
+  "environment": {
+    "python": "3.13.9",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "pandas": "2.3.3",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3",
+      "sklearn": "1.9.1",
+      "statsmodels": "0.14.5",
+      "nltk": "3.9.2",
+      "vaderSentiment": "n/a",
+      "mlxtend": "0.25.0",
+      "matplotlib": "3.11.2",
+      "seaborn": "0.13.2",
+      "plotly": "6.3.0",
+      "streamlit": "1.51.0",
+      "pyarrow": "21.0.0",
+      "openpyxl": "3.1.5",
+      "docx": "1.2.0"
+    }
+  },
+  "stage_seconds": {
+    "warehouse": 0.07,
+    "analytics_load": 0.05,
+    "validate": 0.04,
+    "ingest": 0.35,
+    "transform": 0.51,
+    "eda": 1.07,
+    "sentiment": 37.54,
+    "topics": 5.78,
+    "mining": 74.55,
+    "integrate": 0.93,
+    "decision": 0.01,
+    "figures": 3.71
+  },
+  "deterministic_hashes": {
+    "silver_content_sha256": "b075bf7e5be1dfceeffce83c64c5f5ff1f6ed9f9b97a02bc5b744b8acf2ee242",
+    "analytics_kpi_table_sha256": "7139a92085f578898d8f865db3ecc7cbc6c404b2380b706fd17869b56fef229d"
+  },
+  "artifacts": {
+    "data/bronze/customer_voice_raw.parquet": {
+      "bytes": 271420
+    },
+    "data/gold/cvi_warehouse.db": {
+      "bytes": 2011136
+    },
+    "data/silver/customer_voice_clean.parquet": {
+      "bytes": 332725
+    },
+    "data/silver/customer_voice_quarantine.parquet": {
+      "bytes": 9235
+    },
+    "data/silver/mining_segments.parquet": {
+      "bytes": 57886
+    },
+    "data/silver/nlp_sentiment.parquet": {
+      "bytes": 89249
+    },
+    "data/silver/nlp_topics.parquet": {
+      "bytes": 25001
+    }
+  }
+}

@@ -1,0 +1,9 @@
+kpi,current,proposed_target,higher_is_better,unit,definition_source,status,status_label,gap_to_target,target_is_assumption
+Negative Sentiment Rate,0.240416666667,0.2,False,pct,Metric Guidance,serious,Off target,0.040416666667,True
+Repeat Purchase Rate,0.574583333333,0.6,True,pct,Metric Guidance,warning,Near target,-0.025416666666999932,True
+Average Resolution Time (h),11.2562083333,10.0,False,hours,Metric Guidance,serious,Off target,1.2562083333,True
+Revenue at Risk (share of revenue),0.244835611206,0.2,False,pct,Metric Guidance,serious,Off target,0.04483561120599999,True
+Net Sentiment Score (pts),33.0416666667,40.0,True,pts,Derived,serious,Off target,-6.958333333299997,True
+Average CSAT (1-5),3.46191666667,3.7,True,num,Derived,warning,Near target,-0.2380833333300001,True
+"Resolution time, negative cases (h)",18.113864818,12.0,False,hours,Derived,critical,Well off target,6.113864818,True
+"Repeat rate, negative-sentiment customers",0.282495667244,0.4,True,pct,Derived,critical,Well off target,-0.11750433275600003,True

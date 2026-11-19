@@ -1,0 +1,5 @@
+input,accuracy,macro_f1
+Full text,1.0,1.0
+Descriptor word MASKED (topic / channel / product words only),0.3416666666666667,0.3229719974741882
+Descriptor word ONLY,1.0,1.0
+Majority-class baseline,0.5708333333333333,0.24226348364279401

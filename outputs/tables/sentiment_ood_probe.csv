@@ -1,0 +1,31 @@
+text,label,TF-IDF+LR (trained on supplied data),Hybrid TF-IDF+VADER,VADER lexicon
+"Delivery was super quick and the packaging was perfect, very happy!",Positive,Positive,Positive,Positive
+"Love the new app, checkout is easy and fast.",Positive,Positive,Positive,Positive
+"The support agent solved my issue in minutes, excellent service.",Positive,Positive,Positive,Positive
+"Great quality for the price, will definitely buy again.",Positive,Positive,Positive,Positive
+"Refund arrived the next day, really impressed.",Positive,Negative,Positive,Positive
+Product exactly as described and works wonderfully.,Positive,Positive,Positive,Positive
+Smooth experience from order to delivery.,Positive,Positive,Positive,Neutral
+The staff in the store were friendly and helpful.,Positive,Positive,Positive,Positive
+"Fantastic value, I am satisfied with this purchase.",Positive,Positive,Positive,Positive
+Very pleased with how quickly the issue was resolved.,Positive,Negative,Positive,Positive
+My order arrived two weeks late and nobody answered my calls.,Negative,Negative,Negative,Neutral
+"The product was broken when it arrived, terrible quality.",Negative,Negative,Negative,Negative
+Customer support was rude and unhelpful.,Negative,Negative,Negative,Negative
+"Still waiting for my refund after a month, very disappointed.",Negative,Negative,Negative,Negative
+"The app keeps crashing at checkout, so frustrating.",Negative,Positive,Negative,Negative
+Packaging was damaged and items were missing.,Negative,Positive,Negative,Negative
+"Way too expensive for what you get, not worth it.",Negative,Negative,Negative,Negative
+"I would not recommend this, the experience was awful.",Negative,Negative,Negative,Negative
+Item was out of stock but they took my payment anyway.,Negative,Negative,Neutral,Neutral
+"Worst service ever, never ordering again.",Negative,Negative,Negative,Negative
+The order arrived on the expected date.,Neutral,Negative,Neutral,Neutral
+"The product is okay, nothing special.",Neutral,Neutral,Neutral,Negative
+Delivery took about the usual time.,Neutral,Positive,Positive,Neutral
+"It is an average app, does what it says.",Neutral,Neutral,Neutral,Neutral
+The price is standard for this category.,Neutral,Neutral,Neutral,Neutral
+Packaging was acceptable.,Neutral,Neutral,Neutral,Positive
+"The support call was fine, neither good nor bad.",Neutral,Negative,Negative,Negative
+I received the item as ordered.,Neutral,Negative,Neutral,Neutral
+Quality is normal for the price.,Neutral,Neutral,Neutral,Neutral
+The refund process took the usual few days.,Neutral,Negative,Positive,Neutral

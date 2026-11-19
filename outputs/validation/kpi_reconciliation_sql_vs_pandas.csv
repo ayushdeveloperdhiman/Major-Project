@@ -1,0 +1,29 @@
+check,sql,pandas,abs_diff,tolerance,status
+overall: feedback_count,2400.0,2400.0,0.0,0.0,PASS
+overall: negative_sentiment_rate,0.2404,0.24041666666666667,1.666666666666483e-05,0.0001,PASS
+overall: positive_sentiment_rate,0.5708,0.5708333333333333,3.333333333332966e-05,0.0001,PASS
+overall: net_sentiment_score,33.04,33.041666666666664,0.0016666666666651508,0.01,PASS
+overall: repeat_purchase_rate,0.5746,0.5745833333333333,1.666666666666483e-05,0.0001,PASS
+overall: avg_resolution_hours,11.256,11.256208333333333,0.00020833333333314386,0.001,PASS
+overall: avg_csat,3.462,3.461916666666666,8.333333333432336e-05,0.001,PASS
+overall: total_revenue_inr,15124903.57,15124903.57,0.0,0.01,PASS
+overall: revenue_at_risk_inr,3703115.01,3703115.01,0.0,0.01,PASS
+by issue [App Experience]: negative_sentiment_rate,0.2617,0.26174496644295303,4.496644295304275e-05,0.0001,PASS
+by issue [App Experience]: revenue_at_risk_inr,541983.06,541983.0599999999,1.1641532182693481e-10,0.01,PASS
+by issue [Customer Support]: negative_sentiment_rate,0.2867,0.2866666666666667,3.333333333332966e-05,0.0001,PASS
+by issue [Customer Support]: revenue_at_risk_inr,552222.38,552222.38,0.0,0.01,PASS
+by issue [Delivery Delay]: negative_sentiment_rate,0.2432,0.24324324324324326,4.3243243243257234e-05,0.0001,PASS
+by issue [Delivery Delay]: revenue_at_risk_inr,483194.97,483194.97000000003,5.820766091346741e-11,0.01,PASS
+by issue [Packaging]: negative_sentiment_rate,0.2399,0.23985239852398524,4.760147601476361e-05,0.0001,PASS
+by issue [Packaging]: revenue_at_risk_inr,441237.23,441237.23,0.0,0.01,PASS
+by issue [Pricing]: negative_sentiment_rate,0.2198,0.21981424148606812,1.4241486068128362e-05,0.0001,PASS
+by issue [Pricing]: revenue_at_risk_inr,448018.14,448018.14,0.0,0.01,PASS
+by issue [Product Availability]: negative_sentiment_rate,0.2159,0.21587301587301588,2.6984126984125334e-05,0.0001,PASS
+by issue [Product Availability]: revenue_at_risk_inr,403076.03,403076.02999999997,5.820766091346741e-11,0.01,PASS
+by issue [Product Quality]: negative_sentiment_rate,0.2181,0.2181208053691275,2.0805369127518958e-05,0.0001,PASS
+by issue [Product Quality]: revenue_at_risk_inr,408231.36,408231.36,0.0,0.01,PASS
+by issue [Refund Delay]: negative_sentiment_rate,0.2408,0.2408026755852843,2.6755852843007855e-06,0.0001,PASS
+by issue [Refund Delay]: revenue_at_risk_inr,425151.84,425151.83999999997,5.820766091346741e-11,0.01,PASS
+by segment [Loyal Repeaters]: feedback_count,1228.0,1228.0,0.0,0.0,PASS
+by segment [At-Risk]: feedback_count,586.0,586.0,0.0,0.0,PASS
+by segment [Satisfied Non-Repeaters]: feedback_count,586.0,586.0,0.0,0.0,PASS

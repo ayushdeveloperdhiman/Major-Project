@@ -1,0 +1,6 @@
+Metric,Interpretation
+Negative Sentiment Rate,Negative feedback / total feedback
+Repeat Purchase Rate,Customers/records with repeat flag / total
+Average Resolution Time,Mean hours to resolution
+Revenue at Risk,Revenue associated with selected high-risk/negative segments
+Topic Share,Feedback assigned to a topic / total feedback

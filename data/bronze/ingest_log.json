@@ -1,0 +1,21 @@
+{
+  "source_file": "Client Data Set for Student Project Workbook.xlsx",
+  "source_sheet": "Customer Voice",
+  "source_sha256": "028d65da7b2e1d1d5bcbe6c83754c164f54e02bd29e3a0d86b5ff2e3bf2b708d",
+  "batch_id": "028d65da7b2e",
+  "rows": 2400,
+  "columns": 15,
+  "schema_drift": {
+    "missing_columns": [],
+    "unexpected_columns": [],
+    "order_matches": true,
+    "n_columns": 15
+  },
+  "dictionary_fields_match_columns": true,
+  "total_null_cells": 0,
+  "distinct_feedback_ids": 2400,
+  "distinct_customer_ids": 1114,
+  "ingested_at_utc": "2026-11-09T15:54:44+00:00",
+  "competitor_data_present": false,
+  "note_competitor_file": "'Competitor Alpha Data Set for Student.xlsx' contains only a Data Dictionary and Metric Guidance - no competitor measurements - so no competitor benchmarking is possible."
+}

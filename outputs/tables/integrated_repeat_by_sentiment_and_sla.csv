@@ -1,0 +1,7 @@
+sentiment,resolution,n,repeat_rate
+Negative,Slow (>12h),526,0.2718631178707224
+Negative,Within SLA (<=12h),51,0.39215686274509803
+Neutral,Slow (>12h),128,0.5
+Neutral,Within SLA (<=12h),325,0.5076923076923077
+Positive,Slow (>12h),376,0.6861702127659575
+Positive,Within SLA (<=12h),994,0.7334004024144869
